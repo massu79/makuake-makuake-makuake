@@ -99,6 +99,22 @@ img { display: block; max-width: 100%; }
 .impact-card .impact-number { margin: 0; color: #d7b47c; font-family: var(--serif); font-size: 42px; }
 .impact-card h2 { margin: 3px 0 16px; font-size: 26px; }
 .impact-card p:last-child { margin: 0; color: #e7ebef; }
+.scene-planning > p { max-width: 680px; }
+.scene-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin-top: 26px; }
+.scene-card { overflow: hidden; border: 1px solid var(--line); background: #fff; }
+.scene-card img, .scene-placeholder { width: 100%; aspect-ratio: 4/3; object-fit: cover; }
+.scene-card > div:last-child { padding: 20px; }
+.scene-card span { color: var(--gold); font-size: 10px; font-weight: 800; letter-spacing: .14em; }
+.scene-card h3 { margin: 5px 0 8px; font-size: 17px; }
+.scene-card p { margin: 0; font-size: 12px; line-height: 1.75; }
+.scene-card-pending { background: linear-gradient(180deg, #fff, #faf8f2); }
+.scene-placeholder { display: grid; place-items: center; color: #9b7a49; background:
+  linear-gradient(135deg, rgba(166,123,60,.18), rgba(19,36,59,.1)),
+  repeating-linear-gradient(45deg, rgba(255,255,255,.42) 0 10px, rgba(255,255,255,.12) 10px 20px);
+  font-family: var(--serif); font-size: 18px; letter-spacing: .08em; text-align: center; }
+.shooting-note { margin-top: 22px; padding: 20px 24px; border-left: 4px solid var(--gold); background: var(--soft); }
+.shooting-note strong { font-size: 13px; letter-spacing: .08em; }
+.shooting-note p { margin: 5px 0 0; font-size: 13px; }
 .creator-card { display: grid; grid-template-columns: 92px 1fr; gap: 25px; padding: 28px; border: 1px solid var(--line); }
 .creator-mark { display: grid; width: 92px; height: 92px; place-items: center; color: #f3e8d5; background: var(--navy); font-family: var(--serif); font-size: 38px; }
 .creator-card h3 { margin: 0 0 8px; }
@@ -184,6 +200,8 @@ footer { padding: 54px 0; color: #d6d9df; background: #24262b; }
   .story-image.full-bleed { margin-inline: -14px; }
   .story-image img { aspect-ratio: 4/3; }
   .feature-list { grid-template-columns: 1fr; }
+  .scene-grid { grid-template-columns: 1fr; }
+  .scene-card > div:last-child { padding: 18px; }
   .impact-card { margin-inline: -14px; padding: 36px 25px; }
   .impact-card .impact-number { font-size: 36px; }
   .creator-card { grid-template-columns: 1fr; padding: 21px; }
