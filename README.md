@@ -4,14 +4,20 @@
 
 ## 起動
 
-PowerShellで次を実行します（Codex同梱Pythonにも自動対応します）。
+PowerShellの実行ポリシーに影響されにくい `serve.bat` がおすすめです。
+
+```powershell
+.\serve.bat
+```
+
+PowerShellスクリプトで起動する場合は次を実行します（Codex同梱Pythonにも自動対応します）。
 
 ```powershell
 .\serve.ps1
 ```
 
 ブラウザで `http://127.0.0.1:4173/` を開いてください。
-実行ポリシーで止まる場合は、VS Code の Live Server で `index.html` を開いても動作します。
+`serve.ps1` が実行ポリシーで止まる場合は、`serve.bat` または VS Code の Live Server で `index.html` を開いてください。
 
 ## 実装済み
 
@@ -29,6 +35,7 @@ index.html    ページ本体
 styles.css   レスポンシブデザイン
 script.js    シミュレーション操作
 serve.ps1    ローカルプレビュー起動
+serve.bat    実行ポリシー回避用のローカルプレビュー起動
 ```
 
 ## バージョン管理の方針
